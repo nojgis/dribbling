@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chair/Cone Wave - Cross Over</title>
+</head>
+<body>
+  <h1>Slalom mezi židlemi - křížení</h1>
+  <h2>Popis</h2>
+  <p>Připrav si cestu z židlí, nebo terčíků, cca metr od sebe. Dribluj jedním míčem vnější rukou (vzdálenější od židle) a procházej slalomem mezi židlemi. Při změně směru proveď křížení.</p>
+
+  <h2>Na co se soustředit</h2>
+  <ul>
+    <li>Udržuj míč co nejníže.</li>
+    <li>Kžížení proveď do nejenergičtěji - rychle a nízko.</li>
+    <li>Dívej se před sebe.</li>
+  </ul>
+
+  <h2>délka</h2>
+  <h4>40 vteřin</h4>
+
+  <script>
+  window.onload = function () {
+      const lastPage = sessionStorage.getItem('lastPage');
+      const zpět = document.getElementById("zpet-link");
+      if (lastPage && zpět) {
+      zpět.href = lastPage;
+      zpět.textContent = "← Zpět";
+      }
+  };
+  </script>
+
+  <a id="zpet-link" href="#">← Zpět</a>
+</body>
+</html>

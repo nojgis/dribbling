@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <title>Zig Zag With Light Pressure</title>
+</head>
+<body>
+  <h1>Slalom s lehkým bráněním</h1>
+  <h2>Popis</h2>
+  <p>Dribluj ve slalomu (15 metrů na délku a 4 metry na šířku). Pokud máš partnera, tak to dělej s obráncem, který vyvíjí jen slabý tlak (nekrade míč). Tohle tě naučí driblovat po hřišti s obráncem, který je blízko. Pokud nemáš partnera, tak si ho představuj.</p>
+
+  <h2>Na co se soustředit</h2>
+  <ul>
+    <li>Dívej se před sebe.</li>
+    <li>Dribluj nízko nad zemí.</li>
+    <li>Dribluj vnější rukou (dále od obránce).</li>
+  </ul>
+
+  <h2>délka</h2>
+  <h4>90 vteřin</h4>
+
+  <script>
+  window.onload = function () {
+      const lastPage = sessionStorage.getItem('lastPage');
+      const zpět = document.getElementById("zpet-link");
+      if (lastPage && zpět) {
+      zpět.href = lastPage;
+      zpět.textContent = "← Zpět";
+      }
+  };
+  </script>
+
+  <a id="zpet-link" href="#">← Zpět</a>
+</body>
+</html>

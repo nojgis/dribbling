@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cross Overs - Regular</title>
+</head>
+<body>
+  <h1>Křížení - obvyklé</h1>
+  <h2>Popis</h2>
+  <p>Pokrč kolena a dribluj míčem zleva doprava a zpět. Dribluj před tělem velmi nízko k zemi aby to bylo co nejrychlejší.</p>
+
+  <h4>Výzva: Udělej co nejvíc odrazů za 30 sekund. Poznamenej si výsledek.</h4>
+  <p>Začátečník = 40 odrazů, středně pokročilý = 50 odrazů, pokročilý = 70 odrazů</p>
+
+  <h2>Na co se soustředit</h2>
+  <ul>
+    <li>Dívej se před sebe, když dribluješ.</li>
+    <li>Míč by se měl dotknout polštářků prstů při každém driblinku.</li>
+  </ul>
+
+  <h2>délka</h2>
+  <h4>30 vteřin</h4>
+
+  <script>
+  window.onload = function () {
+      const lastPage = sessionStorage.getItem('lastPage');
+      const zpět = document.getElementById("zpet-link");
+      if (lastPage && zpět) {
+      zpět.href = lastPage;
+      zpět.textContent = "← Zpět";
+      }
+  };
+  </script>
+
+  <a id="zpet-link" href="#">← Zpět</a>
+</body>
+</html>

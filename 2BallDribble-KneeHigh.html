@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <title>2 Ball Dribble - Knee High</title>
+</head>
+<body>
+  <h1>Dribling s 2 balony - do výšky kolen</h1>
+  <h2>Popis</h2>
+  <p>Pokrč kolena a dribluj dvěma míči současně. Udržuj míče synchronně, do výšky pod kolena.</p>
+
+  <h4>Výzva: Udělej co nejvíc odrazů za 30 sekund. Poznamenej si výsledek.</h4>
+  
+  <h2>Na co se soustředit</h2>
+  <ul>
+    <li>Dívej se před sebe, když dribluješ.</li>
+    <li>Dribluj co nejrychleji.</li>
+    <li>Udržuj míč nízko (ve výši kolen, nebo níž).</li>
+  </ul>
+
+  <h2>délka</h2>
+  <h4>30 vteřin</h4>
+
+  <script>
+  window.onload = function () {
+      const lastPage = sessionStorage.getItem('lastPage');
+      const zpět = document.getElementById("zpet-link");
+      if (lastPage && zpět) {
+      zpět.href = lastPage;
+      zpět.textContent = "← Zpět";
+      }
+  };
+  </script>
+
+  <a id="zpet-link" href="#">← Zpět</a>
+</body>
+</html>

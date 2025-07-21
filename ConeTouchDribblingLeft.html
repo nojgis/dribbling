@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cone Touch Dribbling - Left</title>
+</head>
+<body>
+  <h1>Dribling s dotýkáním kuželů - levá</h1>
+  <h2>Popis</h2>
+  <p>Rozmísti 7 - 10 kuželů po plácku velkém 15x15 metrů. Dotkni se tolika kuželů, kolik stihneš ve vymezeném času. Po dotyku se nesmíš vrátit ke stejnému kuželu dříve, než se dotkneš dalších dvou. Musíš se do skončení cvičení dotknout všech kuželů nejméně jednou.</p>
+
+  <h2>Na co se soustředit</h2>
+  <ul>
+    <li>Dívej se před sebe.</li>
+    <li>Běž co nejrychleji.</li>
+    <li>Pořád dribluj (nechytej míč oběma rukama).</li>
+  </ul>
+
+  <h2>délka</h2>
+  <h4>30 vteřin</h4>
+
+  <script>
+  window.onload = function () {
+      const lastPage = sessionStorage.getItem('lastPage');
+      const zpět = document.getElementById("zpet-link");
+      if (lastPage && zpět) {
+      zpět.href = lastPage;
+      zpět.textContent = "← Zpět";
+      }
+  };
+  </script>
+
+  <a id="zpet-link" href="#">← Zpět</a>
+</body>
+</html>

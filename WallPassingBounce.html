@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <title>Wall or Partner Passing - Bounce Pass</title>
+</head>
+<body>
+  <h1>Pasy do zdi o zem</h1>
+  <h2>Popis</h2>
+  <p>Jedná se o trénování pasů od hrudníku o zem. Postav se 3 - 5 metrů od zdi. Prováděj pasy o zem do zdi a chytni míč do obou ruk. Opakuj. Urči si na zdi místo a do něj se vždy trefuj.</p>
+
+  <h4>Výzva: Udělej co nejvíc pasů za 30 sekund. Poznamenej si výsledek.</h4>
+
+  <h2>délka</h2>
+  <h4>30 vteřin</h4>
+
+  <script>
+  window.onload = function () {
+      const lastPage = sessionStorage.getItem('lastPage');
+      const zpět = document.getElementById("zpet-link");
+      if (lastPage && zpět) {
+      zpět.href = lastPage;
+      zpět.textContent = "← Zpět";
+      }
+  };
+  </script>
+
+  <a id="zpet-link" href="#">← Zpět</a>
+</body>
+</html>

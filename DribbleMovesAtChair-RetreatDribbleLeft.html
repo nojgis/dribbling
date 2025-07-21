@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dribble Moves At Chair - Retreat Dribble - Left</title>
+</head>
+<body>
+  <h1>Driblingové pohyby u židle - vycouvání - levá</h1>
+  <h2>Popis</h2>
+  <p>Postav si židli 5 metrů před sebe. Dribluj k židli levou rukou. Když se dostaneš k židli, vycouvej dva kroky za stálého driblování zpět a oběhni židli z prava za stálého driblování. Otoč se a opakuj.</p>
+
+  <h2>Na co se soustředit</h2>
+  <ul>
+    <li>Zastav před židlí jako v hokeji (ochraňuj míč svým zadkem), než vycouváš.</li>
+    <li>Vystartuj rychle, ve chvíli, kdy obíháš židli (udržuj od ní dostatek místa aby ses ochránil před obráncem)</li>
+    <li>Dívej se před sebe.</li>
+  </ul>
+
+  <h2>délka</h2>
+  <h4>8 opakování</h4>
+
+  <script>
+  window.onload = function () {
+      const lastPage = sessionStorage.getItem('lastPage');
+      const zpět = document.getElementById("zpet-link");
+      if (lastPage && zpět) {
+      zpět.href = lastPage;
+      zpět.textContent = "← Zpět";
+      }
+  };
+  </script>
+
+  <a id="zpet-link" href="#">← Zpět</a>
+</body>
+</html>

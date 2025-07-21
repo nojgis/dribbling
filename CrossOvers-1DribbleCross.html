@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cross Overs - 1 Dribble Cross</title>
+</head>
+<body>
+  <h1>Křížení - 1 dribling </h1>
+  <h2>Popis</h2>
+  <p>Pokrč kolena a dribluj míčem jednou pravou rukou, pak udělej křížení a dribluj jednou levou rukou, opět křížení. Opakuj to.</p>
+
+  <h4>Výzva: Udělej co nejvíc opakování za 30 sekund. Poznamenej si výsledek.</h4>
+  <p>Začátečník = 20 opakování, středně pokročilý = 30 opakování, pokročilý = 40 opakování</p>
+
+  <h2>Na co se soustředit</h2>
+  <ul>
+    <li>Dívej se před sebe, když dribluješ.</li>
+    <li>Míč by se měl dotknout polštářků prstů při každém driblinku.</li>
+  </ul>
+
+  <h2>délka</h2>
+  <h4>30 vteřin</h4>
+
+  <script>
+  window.onload = function () {
+      const lastPage = sessionStorage.getItem('lastPage');
+      const zpět = document.getElementById("zpet-link");
+      if (lastPage && zpět) {
+      zpět.href = lastPage;
+      zpět.textContent = "← Zpět";
+      }
+  };
+  </script>
+
+  <a id="zpet-link" href="#">← Zpět</a>
+</body>
+</html>

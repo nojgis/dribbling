@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <title>Half Circle Dribble Stretch Right</title>
+</head>
+<body>
+  <h1>Dribling v půlkruhu - pravá ruka</h1>
+  <h2>Popis</h2>
+  <p>Postav se do basketbalového postoje. Dribluj míčem několik centimetrů nad zemí. Otáčej tělem doprava a dribluj tak daleko, jak to jde, zatímco chodidla zůstanou na místě. Otáčej se při driblingu do leva tak daleko, jak to jde. Opakuj to.</p>
+
+  <h2>Na co se soustředit</h2>
+  <ul>
+    <li>Dribluj nízko, jen několik centimetrů nad zemí.</li>
+    <li>Dribluj polštářky prstů</li>
+    <li>Vyhni se plácání do míče... roztáhni prsty a používej polštářky prstů.</li>
+    <li>Dívej se před sebe.</li>
+  </ul>
+
+  <h2>délka</h2>
+  <h4>30 vteřin</h4>
+
+  <script>
+  window.onload = function () {
+      const lastPage = sessionStorage.getItem('lastPage');
+      const zpět = document.getElementById("zpet-link");
+      if (lastPage && zpět) {
+      zpět.href = lastPage;
+      zpět.textContent = "← Zpět";
+      }
+  };
+  </script>
+
+  <a id="zpet-link" href="#">← Zpět</a>
+</body>
+</html>

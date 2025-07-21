@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <title>Shuttle Dribbling Sprints - Right</title>
+</head>
+<body>
+  <h1>Driblingový sprint - pravá</h1>
+  <h2>Popis</h2>
+  <p>Označ si začátek a konec trasy cca 10 metrů. Dribluj a sprintuj jak nejrychleji dovedeš na konec úseku. Pak se rychle otoč a sprintuj zpět na začátek. Opakuj. Každý desetimetrový úsek se počítá jako jedno opakování.</p>
+  <p>Pokud máš někoho, kdo ti to může měřit se stopkami, zaznamenej si čas.</p>
+
+
+  <h2>délka</h2>
+  <h4>4 opakování</h4>
+
+  <script>
+  window.onload = function () {
+      const lastPage = sessionStorage.getItem('lastPage');
+      const zpět = document.getElementById("zpet-link");
+      if (lastPage && zpět) {
+      zpět.href = lastPage;
+      zpět.textContent = "← Zpět";
+      }
+  };
+  </script>
+
+  <a id="zpet-link" href="#">← Zpět</a>
+</body>
+</html>

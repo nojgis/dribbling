@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <title>Stationary Pivots - Right Foot</title>
+</head>
+<body>
+  <h1>Pivoting na místě - pravá</h1>
+  <h2>Popis</h2>
+  <p>Pokrč kolena a drž míč pevně, jako před střelbou. Používej pravou nohu pro pivoting, otáčej se v ose těla o půlkruh a došlapuj na levou nohu. Teď bys měl(a) být otočená zády oproti původní poloze. Teď následuje opačný pivoting a skončíš v poloze, jako na začátku. Opakuj.</p>
+
+  <h2>Na co se soustředit</h2>
+  <ul>
+    <li>Dívej se před sebe.</li>
+    <li>Drž míč pevně, jako před střelbou.</li>
+    <li>Měj pokrčená kolena.</li>
+  </ul>
+
+  <h2>délka</h2>
+  <h4>40 vteřin</h4>
+
+  <script>
+  window.onload = function () {
+      const lastPage = sessionStorage.getItem('lastPage');
+      const zpět = document.getElementById("zpet-link");
+      if (lastPage && zpět) {
+      zpět.href = lastPage;
+      zpět.textContent = "← Zpět";
+      }
+  };
+  </script>
+
+  <a id="zpet-link" href="#">← Zpět</a>
+</body>
+</html>

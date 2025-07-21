@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <title>Control Dribble Stationary Right</title>
+</head>
+<body>
+  <h1>Dribling s kontrolou - pravá</h1>
+  <h2>Popis</h2>
+  <p>Zaujmi pozici pro kontrolovaný dribling. Ochraňuj míč rukou, která nedribluje. Stiskni prsty do dlaně a zatni ruku. Dribluj míčem za zadní nohou zatímco chráníš míč před imaginárním obráncem.</p>
+  <p>Je důležité driblovat za zadní nohou. Ze začátku to může být nekonfortní, ale s tréninkem se to stane stále více přirozené.</p>
+
+  <h2>Na co se soustředit</h2>
+  <ul>
+    <li>Dívej se před sebe</li>
+    <li>Ochraňuj balon druhou rukou tak, že ji natáhneš a zatneš.</li>
+    <li>Dribluj za zadní nohou (mimo dosah obránce)</li>
+  </ul>
+
+  <h2>délka</h2>
+  <h4>30 vteřin</h4>
+
+  <script>
+  window.onload = function () {
+      const lastPage = sessionStorage.getItem('lastPage');
+      const zpět = document.getElementById("zpet-link");
+      if (lastPage && zpět) {
+      zpět.href = lastPage;
+      zpět.textContent = "← Zpět";
+      }
+  };
+  </script>
+
+  <a id="zpet-link" href="#">← Zpět</a>
+
+
+</body>
+</html>

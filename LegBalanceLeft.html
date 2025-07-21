@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <title>Leg Balance Left</title>
+</head>
+<body>
+  <h1>Balancování na levé noze</h1>
+  <h2>Popis</h2>
+  <p>Zvedni pravou nohu ze země a balancuj na levé. Současně zvedej míč do výšky a dolů k pasu</p>
+
+  <h2>Na co se soustředit</h2>
+  <ul>
+    <li>Dívej se před sebe</li>
+    <li>Nedotýkej se pravou nohou země</li>
+    <li>Když pohybuješ míčem natahuj ruce co nejvýš a nejníž</li>
+  </ul>
+
+  <h2>délka</h2>
+  <h4>20 vteřin</h4>
+
+  <script>
+  window.onload = function () {
+      const lastPage = sessionStorage.getItem('lastPage');
+      const zpět = document.getElementById("zpet-link");
+      if (lastPage && zpět) {
+      zpět.href = lastPage;
+      zpět.textContent = "← Zpět";
+      }
+  };
+  </script>
+
+  <a id="zpet-link" href="#">← Zpět</a>
+</body>
+</html>

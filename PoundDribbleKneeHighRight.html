@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pound Dribble Knee High Right</title>
+</head>
+<body>
+  <h1>Dribling do výše kolen - pravá</h1>
+  <h2>Popis</h2>
+  <p>Pokrč kolena a dribluj (s důrazem) míčem do výše kolen. Míč by měl skákat do výše kolen při každém odrazu.</p>
+
+  <h4>Výzva: Udělej co nejvíc odrazů za 30 sekund. Poznamenej si výsledek.</h4>
+  <p>Začátečník = 50 odrazů, středně pokročilý = 80 odrazů, pokročilý = 100 odrazů</p>
+
+  <h2>Na co se soustředit</h2>
+  <ul>
+    <li>Bouchej míčem tak silně, jak můžeš!</li>
+    <li>Dívej se před sebe, když dribluješ.</li>
+    <li>Míč by se měl dotknout polštářků prstů při každém driblinku.</li>
+  </ul>
+
+  <h2>délka</h2>
+  <h4>30 vteřin</h4>
+
+  <script>
+  window.onload = function () {
+      const lastPage = sessionStorage.getItem('lastPage');
+      const zpět = document.getElementById("zpet-link");
+      if (lastPage && zpět) {
+      zpět.href = lastPage;
+      zpět.textContent = "← Zpět";
+      }
+  };
+  </script>
+
+  <a id="zpet-link" href="#">← Zpět</a>
+</body>
+</html>

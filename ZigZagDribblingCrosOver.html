@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <title>Zig Zag Dribbling - Cross Over</title>
+</head>
+<body>
+  <h1>Dribling při slalomu - křížení</h1>
+  <h2>Popis</h2>
+  <p>Jedná se o driblingový slalom. Vyčleň si plácek 20 metrů dlouhý a 5 metrů široký a dribluj zleva doprava. Před změnou směru proveď křížení a dribluj vždy vnější rukou. Na konci plácku se otoč a pokračuj zpět do konce časového limitu.</p>
+
+  <h2>Na co se soustředit</h2>
+  <ul>
+    <li>Ve chvíli, kdy měníš směr drž míč nízko.</li>
+    <li>Plácni do míče, ve chvíli, kdy měníš směr.</li>
+    <li>Ve chvíli, kdy měníš směr, zrychli. Chceš provést rychou změnu směru s energickým prvním krokem.</li>
+  </ul>
+
+  <h2>délka</h2>
+  <h4>40 vteřin</h4>
+
+  <script>
+  window.onload = function () {
+      const lastPage = sessionStorage.getItem('lastPage');
+      const zpět = document.getElementById("zpet-link");
+      if (lastPage && zpět) {
+      zpět.href = lastPage;
+      zpět.textContent = "← Zpět";
+      }
+  };
+  </script>
+
+  <a id="zpet-link" href="#">← Zpět</a>
+</body>
+</html>

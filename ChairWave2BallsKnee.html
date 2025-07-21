@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chair/Cone Wave with Two Balls - Knee Level</title>
+</head>
+<body>
+  <h1>Slalom s 2 míči mezi židlemi - do výše ponožek</h1>
+  <h2>Popis</h2>
+  <p>Připrav si cestu z židlí, nebo terčíků, cca metr od sebe. Dribluj se 2 míči do výše kolen a procházej slalomem mezi židlemi. Dribluj oběma míči současně (tak aby se odrážely od země ve stejný okamžik).</p>
+
+  <h2>Na co se soustředit</h2>
+  <ul>
+    <li>Běž co nejrychleji.</li>
+    <li>Dívej se před sebe.</li>
+  </ul>
+
+  <h2>délka</h2>
+  <h4>40 vteřin</h4>
+
+  <script>
+  window.onload = function () {
+      const lastPage = sessionStorage.getItem('lastPage');
+      const zpět = document.getElementById("zpet-link");
+      if (lastPage && zpět) {
+      zpět.href = lastPage;
+      zpět.textContent = "← Zpět";
+      }
+  };
+  </script>
+
+  <a id="zpet-link" href="#">← Zpět</a>
+</body>
+</html>

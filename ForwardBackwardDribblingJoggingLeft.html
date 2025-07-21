@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <title>Forward/Backward Dribbling - Jogging Left</title>
+</head>
+<body>
+  <h1>Dribling, běh dopředu a zpět - levá</h1>
+  <h2>Popis</h2>
+  <p>Dribluj a utíkej dopředu 10 metrů a zpět pozpátku</p>
+
+  <h2>délka</h2>
+  <h4>4 opakování</h4>
+
+  <script>
+  window.onload = function () {
+      const lastPage = sessionStorage.getItem('lastPage');
+      const zpět = document.getElementById("zpet-link");
+      if (lastPage && zpět) {
+      zpět.href = lastPage;
+      zpět.textContent = "← Zpět";
+      }
+  };
+  </script>
+
+  <a id="zpet-link" href="#">← Zpět</a>
+</body>
+</html>
